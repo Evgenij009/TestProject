@@ -1,0 +1,20 @@
+package by.epam.patterns.abstract_factory.factories.impl;
+
+import by.epam.patterns.abstract_factory.buttons.Button;
+import by.epam.patterns.abstract_factory.buttons.impl.MacOSButton;
+import by.epam.patterns.abstract_factory.checkboxes.Checkbox;
+import by.epam.patterns.abstract_factory.checkboxes.impl.MacOSCheckbox;
+import by.epam.patterns.abstract_factory.factories.GUIFactory;
+
+public class MacOSFactory implements GUIFactory {
+
+    @Override
+    public Button createButton() {
+        return new MacOSButton();
+    }
+
+    @Override
+    public Checkbox createCheckbox() {
+        return new MacOSCheckbox();
+    }
+}
