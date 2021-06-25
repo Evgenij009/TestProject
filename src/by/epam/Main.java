@@ -8,6 +8,6 @@ public class Main {
 
     public static void main(String[] args) {
         String[] testForFinndSubString = new String[]{"test1asdad", "testasffs", "testas as", "testasds"};
-        System.out.println(Algorithms.findLongersubLineInTheLines(testForFinndSubString));
+        
     }
 }
